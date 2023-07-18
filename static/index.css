@@ -1,0 +1,41 @@
+body {
+    background-color: teal;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .title {
+    text-align: center;
+    color: #333;
+    text-decoration: solid;
+    
+  }
+  
+  .box {
+    background-color: bisque;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  ul {
+    list-style-type:none;
+    padding: 0;
+
+    
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  

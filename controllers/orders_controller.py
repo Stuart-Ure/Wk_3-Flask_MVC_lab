@@ -5,7 +5,7 @@ order_blueprint= Blueprint("orders", __name__)
 
 @order_blueprint.route("/orders/")
 def index():
-    return render_template("index.html", title= "My orders", orders_list= orders)
+    return render_template("index.html", title= "Stuarts Beer Shop - orders", orders_list= orders)
 
 
 @order_blueprint.route("/orders/<int:index>")
