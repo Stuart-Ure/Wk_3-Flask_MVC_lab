@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> {{title}}</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}"/>
+    
 </head>
 <body>
     <h1> {{title}}</h1>
     <ul> {% for order in orders_list %}
-        <li><b>{{ order.customer_name}}</b></li>
+        <b><a href="/orders/{{ orders_list.index(order) }}">{{ order.customer_name }}</a></b>
         <li>Order Date: {{ order.order_date }}</li>
         <li>Beer Type: {{ order.beer_type }}</li>
         <li>Quantity: {{ order.quantity }}</li>
