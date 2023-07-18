@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {{title}}</title>
+</head>
+<body>
+    <h1> {{title}}</h1>
+    <ul> {% for order in orders_list %}
+        <li><b>{{ order.customer_name}}</b></li>
+        <li>Order Date: {{ order.order_date }}</li>
+        <li>Beer Type: {{ order.beer_type }}</li>
+        <li>Quantity: {{ order.quantity }}</li>
+        <li>Description: {{ order.description }}</li>
+        <br>
+    {% endfor %}
+
+</ul>
+</body>
+</html>
